@@ -1180,10 +1180,16 @@ img {
 }
 
 .footer-logo-img {
-  height: 32px;
+  height: 36px;
   width: auto;
   object-fit: contain;
-  filter: brightness(0) invert(1);
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .footer-logo-img {
+    height: 40px;
+  }
 }
 
 /* Compact Contact Info */
@@ -1222,39 +1228,44 @@ img {
   font-size: 10px;
 }
 
-/* Social Media Buttons */
+/* Social Media Buttons - Permanent Brand Colors */
 .footer-social-row {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   flex-shrink: 0;
 }
 
 .social-icon-btn {
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
-  transition: all 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
-.social-icon-btn:hover {
-  background: #6D5DF5;
-  color: #FFFFFF;
-  border-color: #6D5DF5;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(109, 93, 245, 0.35);
+.whatsapp-btn {
+  background: #25D366;
 }
 
-.social-icon-btn[aria-label="WhatsApp"]:hover {
-  background: #00C853;
-  border-color: #00C853;
-  box-shadow: 0 4px 12px rgba(0, 200, 83, 0.35);
+.whatsapp-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.45);
+  opacity: 0.95;
+}
+
+.instagram-btn {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.instagram-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(225, 48, 108, 0.45);
+  opacity: 0.95;
 }
 
 /* Bottom Line & Copyright */
