@@ -1099,32 +1099,177 @@ img {
 /* ==================================================
    FOOTER
    ================================================== */
+/* ==================================================
+   FOOTER (COMPACT GRADIENT TECH CONCEPT #1)
+   ================================================== */
 .site-footer {
-  background: var(--bg-light);
-  border-top: 1px solid var(--border-light);
-  padding-top: 28px;
-  padding-bottom: 28px;
-}
-
-.footer-inner {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  align-items: center;
-  text-align: center;
+  background: linear-gradient(135deg, #171A3A 0%, #25205A 100%);
+  color: #FFFFFF;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  position: relative;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
-  .footer-inner {
+  .site-footer {
+    padding-top: 28px;
+    padding-bottom: 22px;
+  }
+}
+
+/* Subtle background glows */
+.site-footer::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: -40px;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(109, 93, 245, 0.14) 0%, transparent 70%);
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.site-footer::after {
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  right: -40px;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(0, 200, 83, 0.10) 0%, transparent 70%);
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+/* Desktop Horizontal Single-Line Layout */
+.footer-top-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 992px) {
+  .footer-top-row {
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    gap: 24px;
     text-align: left;
   }
 }
 
-.footer-copy {
+.footer-logo-link {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.footer-logo-img {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+/* Compact Contact Info */
+.footer-info-compact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 12px;
   font-size: 12px;
-  color: var(--text-muted);
+  color: #A7B0C5;
+}
+
+@media (min-width: 992px) {
+  .footer-info-compact {
+    justify-content: flex-start;
+    font-size: 13px;
+  }
+}
+
+.info-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #A7B0C5;
+  white-space: nowrap;
+}
+
+.info-item svg {
+  color: #00C853;
+  flex-shrink: 0;
+}
+
+.info-sep {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 10px;
+}
+
+/* Social Media Buttons */
+.footer-social-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.social-icon-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  transition: all 0.2s ease;
+}
+
+.social-icon-btn:hover {
+  background: #6D5DF5;
+  color: #FFFFFF;
+  border-color: #6D5DF5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(109, 93, 245, 0.35);
+}
+
+.social-icon-btn[aria-label="WhatsApp"]:hover {
+  background: #00C853;
+  border-color: #00C853;
+  box-shadow: 0 4px 12px rgba(0, 200, 83, 0.35);
+}
+
+/* Bottom Line & Copyright */
+.footer-bottom-line {
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  padding-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  .footer-bottom-line {
+    justify-content: flex-start;
+  }
+}
+
+.footer-copyright {
+  font-size: 11.5px;
+  color: #A7B0C5;
 }
 
 /* ==================================================

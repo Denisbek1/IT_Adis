@@ -109,3 +109,11 @@ Before declaring any task complete:
 1. **Source Integrity Check**: Ensure HTML, CSS, and JS files have zero syntax errors or broken image paths.
 2. **Build Verification**: Validate that `npm run build` executes without errors when testing local builds.
 3. **Git Cleanliness Check**: Verify `git status` reflects clean working tree without untracked `dist/` or `node_modules/` files.
+
+## Migration Rule
+
+The current project remains HTML + CSS + Vanilla JavaScript + Vite.
+
+Do NOT migrate the project to React, TypeScript, or Tailwind unless the user explicitly requests the migration.
+
+The future React + TypeScript + Tailwind CSS stack is a roadmap, not the current implementation

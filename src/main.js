@@ -114,6 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactModalOpenBtn = document.getElementById('contactModalOpenBtn');
   const startModalOpenBtn = document.getElementById('startModalOpenBtn');
   const internshipModalBtn = document.getElementById('internshipModalBtn');
+  const footerCtaBtn = document.getElementById('footerCtaBtn');
+  const footerNavContact = document.getElementById('footerNavContact');
   const bottomNavContact = document.getElementById('bottomNavContact');
   const drawerContactLink = document.getElementById('drawerContactLink');
   const contactForm = document.getElementById('contactForm');
@@ -131,6 +133,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (contactModalOpenBtn) contactModalOpenBtn.addEventListener('click', openModal);
   if (startModalOpenBtn) startModalOpenBtn.addEventListener('click', openModal);
   if (internshipModalBtn) internshipModalBtn.addEventListener('click', openModal);
+  if (footerCtaBtn) footerCtaBtn.addEventListener('click', openModal);
+  if (footerNavContact) footerNavContact.addEventListener('click', (e) => { e.preventDefault(); openModal(); });
   if (bottomNavContact) bottomNavContact.addEventListener('click', (e) => { e.preventDefault(); openModal(); });
   if (drawerContactLink) drawerContactLink.addEventListener('click', (e) => { e.preventDefault(); closeDrawer(); openModal(); });
   if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
