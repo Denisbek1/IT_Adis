@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>IT Adis — Образовательный центр IT-профессий в Бишкеке</title>
+  <meta name="description"
+    content="Обучаем IT-профессиям и готовим к реальной карьере. Практическое обучение от экспертов, реальные проекты и поддержка на каждом этапе." />
+    <link rel="icon" type="image/png" href="./public/assets/itadis_logo_transparent.png" />
+    <link rel="stylesheet" href="./src/style.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="header-left">
+        <button class="menu-trigger" id="menuOpenBtn" aria-label="Открыть меню">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <a href="#" class="brand-logo-link" aria-label="IT Adis">
+          <img src="./public/assets/itadis_logo_transparent.png" alt="IT Adis Окуу Борбору" class="header-logo-img" />
+        </a>
+      </div>
+
+      <!-- Desktop Navbar Links -->
+      <nav class="desktop-nav">
+        <a href="#" class="active" id="t-deskNavHome">Главная</a>
+        <a href="#directions" id="t-deskNavCourses">Курсы</a>
+        <a href="#internship" id="t-deskNavInternship">Стажировка</a>
+        <a href="#about" id="t-deskNavAbout">О центре</a>
+      </nav>
+
+      <div class="header-right">
+        <div class="lang-switch" id="langToggleBtn" title="Переключить язык">
+          <span class="lang-item active" id="langRU">RU</span>
+          <span>|</span>
+          <span class="lang-item" id="langKG">KG</span>
+        </div>
+
+        <button class="btn-contact-header" id="contactModalOpenBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg>
+          <span id="t-btnContact">Связаться</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-tag badge-purple hero-badge" id="t-heroBadge">
+            ⚡ IT-образование нового поколения
+          </div>
+
+          <h1 class="hero-title" id="t-heroTitle">
+            Профессия <br />
+            в <span class="text-green">IT</span> начинается <br />
+            <span class="text-purple">здесь</span>
+          </h1>
+
+          <p class="hero-subtitle" id="t-heroSubtitle">
+            Практическое обучение от экспертов, реальные проекты и поддержка на каждом этапе.
+          </p>
+
+          <div class="hero-buttons">
+            <button class="btn-primary" id="startModalOpenBtn">
+              <span id="t-btnStart">Начать обучение</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+
+            <a href="#about" class="btn-secondary" id="t-btnLearnMore">
+              Узнать больше
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual-wrap">
+          <div class="hero-visual-card">
+            <!-- Laptop Visual Asset -->
+            <img src="./public/assets/hero_laptop.png" alt="IT Adis Code Education" class="hero-laptop-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS / NUMBERS BLOCK -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-card">
+          <!-- Stat 1 -->
+          <div class="stat-item">
+            <div class="stat-icon-box stat-icon-green">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">1000+</span>
+              <span class="stat-label" id="t-stat1Label">Студентов обучились</span>
+            </div>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="stat-item">
+            <div class="stat-icon-box stat-icon-purple">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">20+</span>
+              <span class="stat-label" id="t-stat2Label">Актуальных курсов</span>
+            </div>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="stat-item">
+            <div class="stat-icon-box stat-icon-blue">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">100+</span>
+              <span class="stat-label" id="t-stat3Label">Реальных проектов</span>
+            </div>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="stat-item">
+            <div class="stat-icon-box stat-icon-orange">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.71 1.26-1.56 1.64-2.5C7.26 16.62 5.56 16.03 4.5 16.5z">
+                </path>
+                <path
+                  d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-3.05 11a22.35 22.35 0 0 1-3.95 2z">
+                </path>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">80%</span>
+              <span class="stat-label" id="t-stat4Label">Трудоустроенных выпускников</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION ("О ЦЕНТРЕ") -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-label" id="t-aboutTag">О ЦЕНТРЕ</div>
+
+        <!-- Part 1: Building Photo Block -->
+        <div class="about-grid-1">
+          <div class="about-text-col">
+            <h2 class="about-title" id="t-aboutHeading1">
+              Мы готовим IT-специалистов, которые <span class="text-green">нужны рынку</span>
+            </h2>
+            <p class="about-desc" id="t-aboutDesc1">
+              IT Adis — современный образовательный центр в Бишкеке. Мы обучаем востребованным IT-профессиям на практике
+              и помогаем начать карьеру в IT.
+            </p>
+          </div>
+
+          <div class="about-logo-card">
+            <img src="./public/assets/itadis_logo_transparent.png" alt="IT Adis Окуу Борбору" class="about-logo-img" />
+          </div>
+        </div>
+
+        <!-- Part 2: Cap Visual Block -->
+        <div class="about-grid-2">
+          <div class="about-text-col">
+            <h2 class="about-title" id="t-aboutHeading2">
+              Обучаем IT-профессиям и готовим к <span class="text-green">реальной карьере</span>
+            </h2>
+            <p class="about-desc" id="t-aboutDesc2">
+              Мы сочетаем практические знания, поддержку наставников и проекты, которые помогают уверенно стартовать в
+              IT.
+            </p>
+          </div>
+
+          <div class="about-cap-card">
+            <img src="./public/assets/grad_cap.png" alt="IT Обучение" class="about-cap-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS SECTION ("ПРЕИМУЩЕСТВА") -->
+    <section class="benefits-section">
+      <div class="container">
+        <div class="benefits-grid">
+          <!-- Benefit 1 -->
+          <div class="benefit-card">
+            <div class="benefit-icon-box stat-icon-purple">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title" id="t-benefit1Title">Опытные наставники</h3>
+            <p class="benefit-desc" id="t-benefit1Desc">Поддержка экспертов на каждом этапе</p>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="benefit-card">
+            <div class="benefit-icon-box stat-icon-green">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="benefit-title" id="t-benefit2Title">Практический подход</h3>
+            <p class="benefit-desc" id="t-benefit2Desc">Учимся на практике и реальных проектах</p>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="benefit-card">
+            <div class="benefit-icon-box stat-icon-orange">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.71 1.26-1.56 1.64-2.5C7.26 16.62 5.56 16.03 4.5 16.5z">
+                </path>
+                <path
+                  d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-3.05 11a22.35 22.35 0 0 1-3.95 2z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="benefit-title" id="t-benefit3Title">Карьерный рост</h3>
+            <p class="benefit-desc" id="t-benefit3Desc">Помогаем найти работу и развиваться в IT</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIRECTIONS SECTION ("НАПРАВЛЕНИЯ") -->
+    <section class="directions-section" id="directions">
+      <div class="container">
+        <div class="section-label" id="t-directionsTag">НАПРАВЛЕНИЯ</div>
+
+        <div class="directions-header-row">
+          <h2 class="directions-title" id="t-directionsHeading">Выберите направление</h2>
+          <a href="#directions" class="link-all-courses">
+            <span id="t-linkAllCourses">Все курсы</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Courses Carousel / Track -->
+        <div class="courses-carousel-wrap">
+          <div class="courses-track" id="coursesTrack">
+            <!-- Course 1 -->
+            <div class="course-card">
+              <div class="course-top-row">
+                <div class="course-icon-wrapper">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 2C6.48 2 6 3.5 6 5.5V8H12V9.5H4.5C2.5 9.5 2 11 2 14.5C2 18 3.5 18.5 5.5 18.5H7V16.5C7 14.5 8.5 13 10.5 13H14C15.5 13 16.5 12 16.5 10.5V5.5C16.5 3.5 15.5 2 12 2ZM9 5.5C9.55 5.5 10 5.95 10 6.5C10 7.05 9.55 7.5 9 7.5C8.45 7.5 8 7.05 8 6.5C8 5.95 8.45 5.5 9 5.5Z"
+                      fill="#306998" />
+                    <path
+                      d="M12 22C17.52 22 18 20.5 18 18.5V16H12V14.5H19.5C21.5 14.5 22 13 22 9.5C22 6 20.5 5.5 18.5 5.5H17V7.5C17 9.5 15.5 11 13.5 11H10C8.5 11 7.5 12 7.5 13.5V18.5C7.5 20.5 8.5 22 12 22ZM15 18.5C14.45 18.5 14 18.05 14 17.5C14 16.95 14.45 16.5 15 16.5C15.55 16.5 16 16.95 16 17.5C16 18.05 15.55 18.5 15 18.5Z"
+                      fill="#FFD43B" />
+                  </svg>
+                </div>
+                <span class="course-badge-popular">Популярный</span>
+              </div>
+              <h3 class="course-title">Python Developer</h3>
+              <p class="course-desc" id="t-course1Desc">Освойте один из самых популярных языков программирования.</p>
+              <div class="course-footer">
+                <span class="course-tag">Back-end</span>
+              </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="course-card">
+              <div class="course-top-row">
+                <div class="course-icon-wrapper" style="background:#FEF9C3;">
+                  <div
+                    style="background:#F7DF1E; color:#000; font-weight:800; padding:4px 8px; border-radius:6px; font-size:16px;">
+                    JS</div>
+                </div>
+              </div>
+              <h3 class="course-title">Frontend Developer</h3>
+              <p class="course-desc" id="t-course2Desc">Создавайте современные и быстрые веб-интерфейсы с нуля.</p>
+              <div class="course-footer">
+                <span class="course-tag">Front-end</span>
+              </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="course-card">
+              <div class="course-top-row">
+                <div class="course-icon-wrapper" style="background:#EEF2FF;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                    <path d="M2 2l7.586 7.586"></path>
+                    <circle cx="11" cy="11" r="2"></circle>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="course-title">UX/UI Дизайнер</h3>
+              <p class="course-desc" id="t-course3Desc">Проектируйте удобные и красивые интерфейсы для людей.</p>
+              <div class="course-footer">
+                <span class="course-tag">Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dots pagination -->
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERNSHIP SECTION ("СТАЖИРОВКА") -->
+    <section class="internship-section" id="internship">
+      <div class="container">
+        <div class="internship-banner">
+          <div class="internship-content">
+            <span class="internship-tag" id="t-internshipTag">СТАЖИРОВКА</span>
+            <h2 class="internship-title" id="t-internshipHeading">Стажировка в IT-компаниях</h2>
+            <p class="internship-desc" id="t-internshipDesc">
+              Получите реальный опыт, работайте над задачами и развивайтесь вместе с профессионалами.
+            </p>
+            <button class="btn-internship" id="internshipModalBtn">
+              <span id="t-btnInternship">Узнать подробнее</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <div class="internship-visual-wrap">
+            <img src="./public/assets/internship_folder.png" alt="Стажировка в IT Adis" class="internship-folder-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand-logo-link">
+        <span class="brand-title"><span class="it">IT</span><span class="adis">adis</span></span>
+        <span class="brand-subtitle" style="margin-left: 6px;">ОКУУ БОРБОРУ</span>
+      </div>
+      <p class="footer-copy">© 2026 IT Adis Окуу Борбору. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- BOTTOM MOBILE NAVIGATION BAR -->
+  <nav class="bottom-nav">
+    <a href="#hero" class="bottom-nav-item active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
+      <span id="t-navHome">Главная</span>
+    </a>
+    <a href="#directions" class="bottom-nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+      </svg>
+      <span id="t-navCourses">Курсы</span>
+    </a>
+    <a href="#internship" class="bottom-nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+      </svg>
+      <span id="t-navInternship">Стажировка</span>
+    </a>
+    <a href="#contactModal" class="bottom-nav-item" id="bottomNavContact">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+      <span id="t-navContact">Контакты</span>
+    </a>
+  </nav>
+
+  <!-- MOBILE SIDE DRAWER -->
+  <div class="drawer-overlay" id="menuDrawer">
+    <div class="drawer-content">
+      <div class="drawer-header">
+        <div class="brand-title-wrap">
+          <span class="brand-title"><span class="it">IT</span><span class="adis">adis</span></span>
+        </div>
+        <button class="drawer-close" id="menuCloseBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="drawer-links">
+        <a href="#hero" class="drawer-link active" id="t-drawerHome">Главная</a>
+        <a href="#directions" class="drawer-link" id="t-drawerCourses">Курсы</a>
+        <a href="#internship" class="drawer-link" id="t-drawerInternship">Стажировка</a>
+        <a href="#about" class="drawer-link" id="t-drawerAbout">О центре</a>
+        <a href="#" class="drawer-link" id="drawerContactLink">Контакты</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT / APPLICATION MODAL -->
+  <div class="modal-backdrop" id="contactModal">
+    <div class="modal-card">
+      <button class="modal-close" id="modalCloseBtn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <h3 class="modal-title" id="modalTitle">Связаться с нами</h3>
+      <p class="modal-subtitle" id="modalSubtitle">Оставьте заявку и мы перезвоним вам в течение 15 минут</p>
+
+      <form id="contactForm">
+        <div class="form-group">
+          <label class="form-label" id="t-labelName">Ваше имя</label>
+          <input type="text" class="form-input" placeholder="Асан" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" id="t-labelPhone">Номер телефона</label>
+          <input type="tel" class="form-input" placeholder="+996 (___) __-__-__" required />
+        </div>
+        <button type="submit" class="btn-primary form-submit" id="t-btnSubmitForm">
+          Отправить заявку
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
