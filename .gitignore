@@ -22,3 +22,7 @@ dist-ssr/
 *.njsproj
 *.sln
 *.sw?
+
+# Local audit reports
+performance_audit.md
+cache_audit.md

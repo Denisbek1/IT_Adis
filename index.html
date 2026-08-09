@@ -7,7 +7,7 @@
   <title>IT Adis — Образовательный центр IT-профессий в Бишкеке</title>
   <meta name="description"
     content="Обучаем IT-профессиям и готовим к реальной карьере. Практическое обучение от экспертов, реальные проекты и поддержка на каждом этапе." />
-    <link rel="icon" type="image/png" href="./public/assets/itadis_logo_transparent.png" />
+    <link rel="icon" type="image/webp" href="./public/assets/itadis_logo_transparent.webp" />
     <link rel="stylesheet" href="./src/style.css" />
 </head>
 
@@ -25,17 +25,17 @@
           </svg>
         </button>
 
-        <a href="#" class="brand-logo-link" aria-label="IT Adis">
-          <img src="./public/assets/itadis_logo_transparent.png" alt="IT Adis Окуу Борбору" class="header-logo-img" />
+        <a href="index.html" class="brand-logo-link" aria-label="IT Adis">
+          <img src="./public/assets/itadis_logo_transparent.webp" alt="IT Adis Окуу Борбору" class="header-logo-img" width="551" height="585" />
         </a>
       </div>
 
       <!-- Desktop Navbar Links -->
       <nav class="desktop-nav">
         <a href="#" class="active" id="t-deskNavHome">Главная</a>
-        <a href="#directions" id="t-deskNavCourses">Курсы</a>
-        <a href="#internship" id="t-deskNavInternship">Стажировка</a>
-        <a href="#about" id="t-deskNavAbout">О центре</a>
+        <a href="courses.html" id="t-deskNavCourses">Курсы</a>
+        <a href="internship.html" id="t-deskNavInternship">Стажировка</a>
+        <a href="contacts.html" id="t-deskNavContacts">Контакты</a>
       </nav>
 
       <div class="header-right">
@@ -45,7 +45,7 @@
           <span class="lang-item" id="langKG">KG</span>
         </div>
 
-        <button class="btn-contact-header" id="contactModalOpenBtn">
+        <a href="contacts.html" class="btn-contact-header" style="text-decoration: none;">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
             stroke-linecap="round" stroke-linejoin="round">
             <path
@@ -53,7 +53,7 @@
             </path>
           </svg>
           <span id="t-btnContact">Связаться</span>
-        </button>
+        </a>
       </div>
     </div>
   </header>
@@ -77,27 +77,12 @@
           <p class="hero-subtitle" id="t-heroSubtitle">
             Практическое обучение от экспертов, реальные проекты и поддержка на каждом этапе.
           </p>
-
-          <div class="hero-buttons">
-            <button class="btn-primary" id="startModalOpenBtn">
-              <span id="t-btnStart">Начать обучение</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </button>
-
-            <a href="#about" class="btn-secondary" id="t-btnLearnMore">
-              Узнать больше
-            </a>
-          </div>
         </div>
 
         <div class="hero-visual-wrap">
           <div class="hero-visual-card">
             <!-- Laptop Visual Asset -->
-            <img src="./public/assets/hero_laptop.png" alt="IT Adis Code Education" class="hero-laptop-img" />
+            <img src="./public/assets/hero_laptop.webp" alt="IT Adis Code Education" class="hero-laptop-img" width="533" height="800" />
           </div>
         </div>
       </div>
@@ -179,7 +164,6 @@
       <div class="container">
         <div class="section-label" id="t-aboutTag">О ЦЕНТРЕ</div>
 
-        <!-- Part 1: Building Photo Block -->
         <div class="about-grid-1">
           <div class="about-text-col">
             <h2 class="about-title" id="t-aboutHeading1">
@@ -192,7 +176,7 @@
           </div>
 
           <div class="about-logo-card">
-            <img src="./public/assets/itadis_logo_transparent.png" alt="IT Adis Окуу Борбору" class="about-logo-img" />
+            <img src="./public/assets/itadis_logo_transparent.webp" alt="IT Adis Окуу Борбору" class="about-logo-img" width="551" height="585" loading="lazy" />
           </div>
         </div>
 
@@ -209,7 +193,7 @@
           </div>
 
           <div class="about-cap-card">
-            <img src="./public/assets/grad_cap.png" alt="IT Обучение" class="about-cap-img" />
+            <img src="./public/assets/grad_cap.webp" alt="IT Обучение" class="about-cap-img" width="700" height="700" loading="lazy" />
           </div>
         </div>
       </div>
@@ -274,7 +258,7 @@
 
         <div class="directions-header-row">
           <h2 class="directions-title" id="t-directionsHeading">Выберите направление</h2>
-          <a href="#directions" class="link-all-courses">
+          <a href="courses.html" class="link-all-courses" style="text-decoration: none;">
             <span id="t-linkAllCourses">Все курсы</span>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
               stroke-linecap="round" stroke-linejoin="round">
@@ -288,10 +272,10 @@
         <div class="courses-carousel-wrap">
           <div class="courses-track" id="coursesTrack">
             <!-- Course 1 -->
-            <div class="course-card">
-              <div class="course-top-row">
-                <div class="course-icon-wrapper">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+            <a href="course-detail.html?course=python" class="course-card course-home-compact">
+              <div class="course-home-left">
+                <div class="course-card-icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
                     <path
                       d="M12 2C6.48 2 6 3.5 6 5.5V8H12V9.5H4.5C2.5 9.5 2 11 2 14.5C2 18 3.5 18.5 5.5 18.5H7V16.5C7 14.5 8.5 13 10.5 13H14C15.5 13 16.5 12 16.5 10.5V5.5C16.5 3.5 15.5 2 12 2ZM9 5.5C9.55 5.5 10 5.95 10 6.5C10 7.05 9.55 7.5 9 7.5C8.45 7.5 8 7.05 8 6.5C8 5.95 8.45 5.5 9 5.5Z"
                       fill="#306998" />
@@ -300,50 +284,58 @@
                       fill="#FFD43B" />
                   </svg>
                 </div>
-                <span class="course-badge-popular">Популярный</span>
-              </div>
-              <h3 class="course-title">Python Developer</h3>
-              <p class="course-desc" id="t-course1Desc">Освойте один из самых популярных языков программирования.</p>
-              <div class="course-footer">
-                <span class="course-tag">Back-end</span>
-              </div>
-            </div>
-
-            <!-- Course 2 -->
-            <div class="course-card">
-              <div class="course-top-row">
-                <div class="course-icon-wrapper" style="background:#FEF9C3;">
-                  <div
-                    style="background:#F7DF1E; color:#000; font-weight:800; padding:4px 8px; border-radius:6px; font-size:16px;">
-                    JS</div>
+                <div class="course-home-info">
+                  <h3 class="course-card-title">Python Developer</h3>
+                  <span class="course-tag-item green-bg">Back-end</span>
                 </div>
               </div>
-              <h3 class="course-title">Frontend Developer</h3>
-              <p class="course-desc" id="t-course2Desc">Создавайте современные и быстрые веб-интерфейсы с нуля.</p>
-              <div class="course-footer">
-                <span class="course-tag">Front-end</span>
+              <div class="course-home-arrow">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5B46F6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
               </div>
-            </div>
+            </a>
+
+            <!-- Course 2 -->
+            <a href="course-detail.html?course=frontend" class="course-card course-home-compact">
+              <div class="course-home-left">
+                <div class="course-card-icon" style="background:#FEF9C3;">
+                  <div style="background:#F7DF1E; color:#000; font-weight:800; padding:3px 6px; border-radius:5px; font-size:14px;">JS</div>
+                </div>
+                <div class="course-home-info">
+                  <h3 class="course-card-title">Frontend Developer</h3>
+                  <span class="course-tag-item purple-bg">Front-end</span>
+                </div>
+              </div>
+              <div class="course-home-arrow">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5B46F6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </div>
+            </a>
 
             <!-- Course 3 -->
-            <div class="course-card">
-              <div class="course-top-row">
-                <div class="course-icon-wrapper" style="background:#EEF2FF;">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
+            <a href="course-detail.html?course=ux-ui" class="course-card course-home-compact">
+              <div class="course-home-left">
+                <div class="course-card-icon" style="background:#EEF2FF;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
                     <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
                     <path d="M2 2l7.586 7.586"></path>
                     <circle cx="11" cy="11" r="2"></circle>
                   </svg>
                 </div>
+                <div class="course-home-info">
+                  <h3 class="course-card-title">UX/UI Дизайнер</h3>
+                  <span class="course-tag-item purple-bg">Design</span>
+                </div>
               </div>
-              <h3 class="course-title">UX/UI Дизайнер</h3>
-              <p class="course-desc" id="t-course3Desc">Проектируйте удобные и красивые интерфейсы для людей.</p>
-              <div class="course-footer">
-                <span class="course-tag">Design</span>
+              <div class="course-home-arrow">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5B46F6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
               </div>
-            </div>
+            </a>
           </div>
 
           <!-- Dots pagination -->
@@ -366,88 +358,94 @@
             <p class="internship-desc" id="t-internshipDesc">
               Получите реальный опыт, работайте над задачами и развивайтесь вместе с профессионалами.
             </p>
-            <button class="btn-internship" id="internshipModalBtn">
+            <a href="internship.html" class="btn-internship" style="text-decoration:none;">
               <span id="t-btnInternship">Узнать подробнее</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                 stroke-linecap="round" stroke-linejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
-            </button>
+            </a>
           </div>
 
           <div class="internship-visual-wrap">
-            <img src="./public/assets/internship_folder.png" alt="Стажировка в IT Adis" class="internship-folder-img" />
+            <img src="./public/assets/internship_folder.webp" alt="Стажировка в IT Adis" class="internship-folder-img" width="700" height="700" loading="lazy" />
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER (Gradient Tech - Compact) -->
-  <footer class="site-footer">
+  <!-- FOOTER -->
+  <footer class="site-footer-dark">
     <div class="container">
-      <div class="footer-top-row">
-        <!-- 1. Original Logo (Full Color) -->
-        <a href="#" class="footer-logo-link" aria-label="IT Adis">
-          <img src="./public/assets/itadis_logo_transparent.png" alt="IT Adis Окуу Борбору" class="footer-logo-img" />
-        </a>
-
-        <!-- 2. Compact Contact Info -->
-        <div class="footer-info-compact">
-          <span class="info-item phone-item">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path
-                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-              </path>
-            </svg>
-            +996 555 123 456
-          </span>
-          <span class="info-sep">•</span>
-          <span class="info-item location-item">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
-            Бишкек, Кыргызстан
-          </span>
-          <span class="info-sep">•</span>
-          <span class="info-item hours-item">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>
-            Пн–Сб 10:00–19:00
-          </span>
+      <div class="footer-dark-inner">
+        <!-- Left Side: Logo & Tagline -->
+        <div class="footer-dark-brand">
+          <a href="index.html" class="footer-logo-link">
+            <img src="./public/assets/itadis_logo_transparent.webp" alt="IT Adis Logo" class="footer-logo-img" width="551" height="585" loading="lazy" />
+          </a>
+          <p class="footer-dark-tagline">
+            IT-образование,<br />
+            которое работает на результат.
+          </p>
         </div>
 
-        <!-- 3. WhatsApp & Instagram (Permanent Brand Colors) -->
-        <div class="footer-social-row">
-          <!-- WhatsApp -->
-          <a href="https://wa.me/996555123456" target="_blank" rel="noopener noreferrer" class="social-icon-btn whatsapp-btn"
-            aria-label="WhatsApp">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.99c-.002 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
-            </svg>
+        <!-- Vertical Divider (Desktop) -->
+        <div class="footer-dark-divider"></div>
+
+        <!-- Right Side: Contact & Social Links List -->
+        <div class="footer-dark-contacts">
+          <!-- Item 1: Address -->
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <span class="footer-contact-text">пр. Манаса 64/1, Бишкек</span>
+          </div>
+
+          <!-- Item 2: WhatsApp -->
+          <a href="https://wa.me/996555123456" target="_blank" rel="noopener noreferrer" class="footer-contact-item footer-contact-link">
+            <div class="footer-contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </div>
+            <span class="footer-contact-text">WhatsApp</span>
           </a>
-          <!-- Instagram -->
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn instagram-btn"
-            aria-label="Instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-            </svg>
+
+          <!-- Item 3: Instagram -->
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-contact-item footer-contact-link">
+            <div class="footer-contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+            <span class="footer-contact-text">Instagram</span>
+          </a>
+
+          <!-- Item 4: Call -->
+          <a href="tel:+996555123456" class="footer-contact-item footer-contact-link">
+            <div class="footer-contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <span class="footer-contact-text">Позвонить</span>
           </a>
         </div>
       </div>
 
-      <!-- 9. Bottom Line -->
-      <div class="footer-bottom-line">
-        <p class="footer-copyright" id="t-footerCopy">© 2026 ITadis</p>
+      <!-- Bottom Bar -->
+      <div class="footer-dark-bottom">
+        <p class="footer-dark-copy">
+          © 2026 <span class="text-green">ITadis</span>. Все права защищены.
+        </p>
       </div>
     </div>
   </footer>
@@ -461,21 +459,21 @@
       </svg>
       <span id="t-navHome">Главная</span>
     </a>
-    <a href="#directions" class="bottom-nav-item">
+    <a href="courses.html" class="bottom-nav-item">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
         <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
         <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
       </svg>
       <span id="t-navCourses">Курсы</span>
     </a>
-    <a href="#internship" class="bottom-nav-item">
+    <a href="internship.html" class="bottom-nav-item">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
         <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
         <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
       </svg>
       <span id="t-navInternship">Стажировка</span>
     </a>
-    <a href="#contactModal" class="bottom-nav-item" id="bottomNavContact">
+    <a href="contacts.html" class="bottom-nav-item" id="bottomNavContact">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
       </svg>
@@ -498,42 +496,14 @@
         </button>
       </div>
       <div class="drawer-links">
-        <a href="#hero" class="drawer-link active" id="t-drawerHome">Главная</a>
-        <a href="#directions" class="drawer-link" id="t-drawerCourses">Курсы</a>
-        <a href="#internship" class="drawer-link" id="t-drawerInternship">Стажировка</a>
-        <a href="#about" class="drawer-link" id="t-drawerAbout">О центре</a>
-        <a href="#" class="drawer-link" id="drawerContactLink">Контакты</a>
+        <a href="index.html" class="drawer-link active" id="t-drawerHome">Главная</a>
+        <a href="courses.html" class="drawer-link" id="t-drawerCourses">Курсы</a>
+        <a href="internship.html" class="drawer-link" id="t-drawerInternship">Стажировка</a>
+        <a href="contacts.html" class="drawer-link" id="t-drawerContacts">Контакты</a>
       </div>
     </div>
   </div>
 
-  <!-- CONTACT / APPLICATION MODAL -->
-  <div class="modal-backdrop" id="contactModal">
-    <div class="modal-card">
-      <button class="modal-close" id="modalCloseBtn">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
-      <h3 class="modal-title" id="modalTitle">Связаться с нами</h3>
-      <p class="modal-subtitle" id="modalSubtitle">Оставьте заявку и мы перезвоним вам в течение 15 минут</p>
-
-      <form id="contactForm">
-        <div class="form-group">
-          <label class="form-label" id="t-labelName">Ваше имя</label>
-          <input type="text" class="form-input" placeholder="Асан" required />
-        </div>
-        <div class="form-group">
-          <label class="form-label" id="t-labelPhone">Номер телефона</label>
-          <input type="tel" class="form-input" placeholder="+996 (___) __-__-__" required />
-        </div>
-        <button type="submit" class="btn-primary form-submit" id="t-btnSubmitForm">
-          Отправить заявку
-        </button>
-      </form>
-    </div>
-  </div>
 
   <script type="module" src="./src/main.js"></script>
 </body>

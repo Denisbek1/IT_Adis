@@ -2,7 +2,6 @@
 
 // Language Dictionary (RU is primary; KG prepared structure references RU for now)
 const ruTranslations = {
-  logoSubtitle: 'ОКУУ БОРБОРУ',
   heroBadge: '⚡ IT-образование нового поколения',
   heroTitle: 'Профессия <br />в <span class="text-green">IT</span> начинается <br /><span class="text-purple">здесь</span>',
   heroSubtitle: 'Практическое обучение от экспертов, реальные проекты и поддержка на каждом этапе.',
@@ -108,50 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   drawerLinks.forEach(link => link.addEventListener('click', closeDrawer));
 
-  // 3. Contact & Application Modal
-  const contactModal = document.getElementById('contactModal');
-  const modalCloseBtn = document.getElementById('modalCloseBtn');
-  const contactModalOpenBtn = document.getElementById('contactModalOpenBtn');
-  const startModalOpenBtn = document.getElementById('startModalOpenBtn');
-  const internshipModalBtn = document.getElementById('internshipModalBtn');
-  const footerCtaBtn = document.getElementById('footerCtaBtn');
-  const footerNavContact = document.getElementById('footerNavContact');
-  const bottomNavContact = document.getElementById('bottomNavContact');
-  const drawerContactLink = document.getElementById('drawerContactLink');
-  const contactForm = document.getElementById('contactForm');
 
-  function openModal() {
-    contactModal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeModal() {
-    contactModal.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-
-  if (contactModalOpenBtn) contactModalOpenBtn.addEventListener('click', openModal);
-  if (startModalOpenBtn) startModalOpenBtn.addEventListener('click', openModal);
-  if (internshipModalBtn) internshipModalBtn.addEventListener('click', openModal);
-  if (footerCtaBtn) footerCtaBtn.addEventListener('click', openModal);
-  if (footerNavContact) footerNavContact.addEventListener('click', (e) => { e.preventDefault(); openModal(); });
-  if (bottomNavContact) bottomNavContact.addEventListener('click', (e) => { e.preventDefault(); openModal(); });
-  if (drawerContactLink) drawerContactLink.addEventListener('click', (e) => { e.preventDefault(); closeDrawer(); openModal(); });
-  if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
-  if (contactModal) {
-    contactModal.addEventListener('click', (e) => {
-      if (e.target === contactModal) closeModal();
-    });
-  }
-
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert('Спасибо! Ваша заявка успешно отправлена. Менеджер IT Adis свяжется с вами.');
-      closeModal();
-      contactForm.reset();
-    });
-  }
 
   // 4. Courses Carousel Scroll Indicators Sync
   const coursesTrack = document.getElementById('coursesTrack');
@@ -179,30 +135,119 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 5. Active state for mobile bottom navigation on scroll
-  const sections = document.querySelectorAll('section[id]');
-  const bottomNavItems = document.querySelectorAll('.bottom-nav-item');
+  // 5. FAQ Accordion Logic (Strictly one open at a time)
+  const faqAccordion = document.getElementById('faqAccordion');
+  if (faqAccordion) {
+    const faqItems = faqAccordion.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const header = item.querySelector('.faq-header');
+      if (header) {
+        header.addEventListener('click', () => {
+          const isOpen = item.classList.contains('active');
+          
+          // Close all items
+          faqItems.forEach(i => i.classList.remove('active'));
 
-  window.addEventListener('scroll', () => {
-    let currentSectionId = '';
-    const scrollY = window.scrollY;
-
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 120;
-      const sectionHeight = section.offsetHeight;
-      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-        currentSectionId = section.getAttribute('id');
+          // If clicked item wasn't open, open it
+          if (!isOpen) {
+            item.classList.add('active');
+          }
+        });
       }
     });
+  }
 
-    bottomNavItems.forEach(item => {
-      const href = item.getAttribute('href');
-      if (href && href.includes(currentSectionId)) {
-        item.classList.add('active');
-      } else if (currentSectionId === 'hero' && href && href.includes('hero')) {
-        item.classList.add('active');
-      } else {
-        item.classList.remove('active');
+  // 6. Course Detail Page Dynamic Loader
+  const courseDetailTitle = document.getElementById('courseDetailTitle');
+  if (courseDetailTitle) {
+    const params = new URLSearchParams(window.location.search);
+    const courseId = params.get('course') || 'python';
+
+    const coursesData = {
+      'python': {
+        title: 'Python Developer',
+        badge: 'Back-end разработка',
+        desc: 'Освойте один из самых популярных и востребованных языков программирования. Обучение с нуля до первых реальных проектов под руководством экспертов.',
+        duration: '6 месяцев',
+        schedule: '3 раза в неделю',
+        format: 'Офлайн / Онлайн'
+      },
+      'frontend': {
+        title: 'Frontend Developer',
+        badge: 'Web разработка',
+        desc: 'Создавайте современные, быстрые и адаптивные веб-интерфейсы с нуля. Изучите HTML5, CSS3, JavaScript и React на практических кейсах.',
+        duration: '5 месяцев',
+        schedule: '3 раза в неделю',
+        format: 'Офлайн / Онлайн'
+      },
+      'ux-ui': {
+        title: 'UX/UI Дизайнер',
+        badge: 'UI/UX Дизайн',
+        desc: 'Проектируйте удобные и эстетичные интерфейсы для сайтов и мобильных приложений. Освойте Figma, логику интерфейсов и исследование пользователей.',
+        duration: '4 месяца',
+        schedule: '2 раза в неделю',
+        format: 'Офлайн / Онлайн'
+      },
+      'data-analyst': {
+        title: 'Data Analyst',
+        badge: 'Анализ данных',
+        desc: 'Анализируйте большие массивы данных и помогайте бизнесу принимать верные решения. Изучите SQL, Excel, Python для аналитики и визуализацию.',
+        duration: '5 месяцев',
+        schedule: '3 раза в неделю',
+        format: 'Офлайн / Онлайн'
+      }
+    };
+
+    const data = coursesData[courseId] || coursesData['python'];
+    courseDetailTitle.textContent = data.title;
+    
+    const descEl = document.getElementById('courseDetailDesc');
+    if (descEl) descEl.textContent = data.desc;
+
+    const badgeEl = document.getElementById('courseDetailBadge');
+    if (badgeEl) badgeEl.textContent = data.badge;
+
+    const durationEl = document.getElementById('courseDetailDuration');
+    if (durationEl) durationEl.textContent = data.duration;
+
+    const scheduleEl = document.getElementById('courseDetailSchedule');
+    if (scheduleEl) scheduleEl.textContent = data.schedule;
+
+    const formatEl = document.getElementById('courseDetailFormat');
+    if (formatEl) formatEl.textContent = data.format;
+
+    const courseRegisterBtn = document.getElementById('courseRegisterBtn');
+    if (courseRegisterBtn) {
+      courseRegisterBtn.addEventListener('click', openModal);
+    }
+  }
+
+  // 7. Standard Navigation & Anchor Scroll Handling
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+
+      if (href === '#contactModal') {
+        e.preventDefault();
+        openModal();
+        return;
+      }
+
+      if (href && href !== '#' && href.length > 1) {
+        const targetElement = document.querySelector(href);
+        if (targetElement) {
+          e.preventDefault();
+          const targetTop = targetElement.offsetTop - 70;
+          window.scrollTo({
+            top: targetTop,
+            behavior: 'smooth'
+          });
+        }
+      }
+
+      const drawer = document.getElementById('menuDrawer');
+      if (drawer && drawer.classList.contains('active')) {
+        closeDrawer();
       }
     });
   });

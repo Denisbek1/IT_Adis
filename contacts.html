@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакты — IT Adis Educational Center</title>
+  <meta name="description" content="Контакты IT Adis Educational Center в Бишкеке. Адрес: пр. Манаса 64/1. WhatsApp, телефон и график работы." />
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Primary Design System CSS -->
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="header-left">
+        <button class="menu-trigger" id="menuOpenBtn" aria-label="Открыть меню">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <a href="index.html" class="brand-logo-link" aria-label="IT Adis">
+          <img src="./public/assets/itadis_logo_transparent.webp" alt="IT Adis Окуу Борбору" class="header-logo-img" width="551" height="585" />
+        </a>
+      </div>
+
+      <!-- Desktop Navbar Links -->
+      <nav class="desktop-nav">
+        <a href="index.html" id="t-deskNavHome">Главная</a>
+        <a href="courses.html" id="t-deskNavCourses">Курсы</a>
+        <a href="internship.html" id="t-deskNavInternship">Стажировка</a>
+        <a href="contacts.html" class="active" id="t-deskNavContacts">Контакты</a>
+      </nav>
+
+      <div class="header-right">
+        <div class="lang-switch" id="langToggleBtn" title="Переключить язык">
+          <span class="lang-item active" id="langRU">RU</span>
+          <span>|</span>
+          <span class="lang-item" id="langKG">KG</span>
+        </div>
+
+        <a href="contacts.html" class="btn-contact-header" style="text-decoration: none;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg>
+          <span id="t-btnContact">Связаться</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="contacts-page-hero">
+      <div class="container contacts-hero-grid">
+        <div class="contacts-hero-content">
+          <div class="badge-tag badge-purple hero-badge">
+            📍 Центр IT-образования
+          </div>
+          <h1 class="contacts-hero-title">
+            Контакт<span class="text-green">ы</span>
+          </h1>
+          <p class="contacts-hero-desc">
+            Мы всегда на связи и готовы ответить на ваши вопросы!
+          </p>
+        </div>
+
+        <div class="contacts-hero-img-wrap">
+          <img src="./public/assets/cont.webp" alt="IT Adis Contacts" class="contacts-hero-img" width="800" height="533" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT CARDS SECTION (4 Cards) -->
+    <section class="contacts-cards-section">
+      <div class="container">
+        <div class="contacts-cards-grid">
+          <!-- Card 1: Адрес -->
+          <div class="contact-card">
+            <div class="contact-card-icon icon-green">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">Адрес</h3>
+            <p class="contact-card-text">
+              пр. Манаса 64/1,<br />Бишкек, Кыргызстан
+            </p>
+            <a href="https://2gis.kg/bishkek" target="_blank" rel="noopener noreferrer" class="contact-card-action text-green">
+              Построить маршрут &rarr;
+            </a>
+          </div>
+
+          <!-- Card 2: Телефон -->
+          <div class="contact-card">
+            <div class="contact-card-icon icon-purple">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">Телефон</h3>
+            <p class="contact-card-text">
+              +996 (555) 123 456
+            </p>
+            <a href="tel:+996555123456" class="contact-card-action text-purple">
+              Позвонить &rarr;
+            </a>
+          </div>
+
+          <!-- Card 3: WhatsApp -->
+          <div class="contact-card">
+            <div class="contact-card-icon icon-green">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">WhatsApp</h3>
+            <p class="contact-card-text">
+              +996 (555) 123 456
+            </p>
+            <a href="https://wa.me/996555123456" target="_blank" rel="noopener noreferrer" class="contact-card-action text-green">
+              Написать &rarr;
+            </a>
+          </div>
+
+          <!-- Card 4: График работы -->
+          <div class="contact-card">
+            <div class="contact-card-icon icon-purple">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">График работы</h3>
+            <p class="contact-card-text">
+              Пн – Пт: 10:00 – 19:00<br />
+              Сб – Вс: выходной
+            </p>
+            <a href="#" class="contact-card-action text-purple footer-contact-trigger">
+              Подробнее &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="contacts-map-section">
+      <div class="container">
+        <div class="map-block-container">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A30890d5d82e47bce460a5501c53b1f073fc68ecf705f57902e93935dbf4110b2&amp;width=100%25&amp;height=380&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL MEDIA SECTION (STRICTLY WhatsApp, Instagram, Телефон) -->
+    <section class="contacts-social-section">
+      <div class="container">
+        <div class="section-header text-center" style="margin-bottom: 20px;">
+          <h2 class="section-title">Мы в социальных сетях</h2>
+        </div>
+
+        <div class="social-cards-grid">
+          <!-- Item 1: Instagram -->
+          <div class="social-card-item">
+            <div class="social-card-icon icon-insta">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </div>
+            <h3 class="social-card-title">Instagram</h3>
+            <p class="social-card-handle">@itadis_edu</p>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              Перейти &rarr;
+            </a>
+          </div>
+
+          <!-- Item 2: WhatsApp -->
+          <div class="social-card-item">
+            <div class="social-card-icon icon-wa">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.99c-.002 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+              </svg>
+            </div>
+            <h3 class="social-card-title">WhatsApp</h3>
+            <p class="social-card-handle">+996 555 123 456</p>
+            <a href="https://wa.me/996555123456" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              Написать &rarr;
+            </a>
+          </div>
+
+          <!-- Item 3: Телефон -->
+          <div class="social-card-item">
+            <div class="social-card-icon icon-phone">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <h3 class="social-card-title">Телефон</h3>
+            <p class="social-card-handle">+996 555 123 456</p>
+            <a href="tel:+996555123456" class="btn-secondary">
+              Позвонить &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MOBILE SIDE DRAWER -->
+  <div class="drawer-overlay" id="menuDrawer">
+    <div class="drawer-content">
+      <div class="drawer-header">
+        <div class="brand-title-wrap">
+          <span class="brand-title"><span class="it">IT</span><span class="adis">adis</span></span>
+        </div>
+        <button class="drawer-close" id="menuCloseBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="drawer-links">
+        <a href="index.html" class="drawer-link" id="t-drawerHome">Главная</a>
+        <a href="courses.html" class="drawer-link" id="t-drawerCourses">Курсы</a>
+        <a href="internship.html" class="drawer-link" id="t-drawerInternship">Стажировка</a>
+        <a href="contacts.html" class="drawer-link active" id="drawerContactLink">Контакты</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- FOOTER (EXACT EXISTING DARK FOOTER - UNTOUCHED) -->
+  <footer class="site-footer-dark">
+    <div class="container">
+      <div class="footer-dark-inner">
+        <!-- Left Side: Logo & Tagline -->
+        <div class="footer-dark-brand">
+          <a href="index.html" class="footer-logo-link">
+            <img src="./public/assets/itadis_logo_transparent.webp" alt="IT Adis Logo" class="footer-logo-img" width="551" height="585" loading="lazy" />
+          </a>
+          <p class="footer-dark-tagline">
+            IT-образование,<br />
+            которое работает на результат.
+          </p>
+        </div>
+
+        <!-- Vertical Divider (Desktop) -->
+        <div class="footer-dark-divider"></div>
+
+        <!-- Right Side: Contact & Social Links List -->
+        <div class="footer-dark-contacts">
+          <!-- Item 1: Address -->
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <span class="footer-contact-text">пр. Манаса 64/1, Бишкек</span>
+          </div>
+
+          <!-- Item 2: WhatsApp -->
+          <a href="https://wa.me/996555123456" target="_blank" rel="noopener noreferrer" class="footer-contact-item footer-contact-link">
+            <div class="footer-contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </div>
+            <span class="footer-contact-text">WhatsApp</span>
+          </a>
+
+          <!-- Item 3: Instagram -->
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-contact-item footer-contact-link">
+            <div class="footer-contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+            <span class="footer-contact-text">Instagram</span>
+          </a>
+
+          <!-- Item 4: Call -->
+          <a href="tel:+996555123456" class="footer-contact-item footer-contact-link">
+            <div class="footer-contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <span class="footer-contact-text">Позвонить</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-dark-bottom">
+        <p class="footer-dark-copy">
+          © 2026 <span class="text-green">ITadis</span>. Все права защищены.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTTOM MOBILE NAVIGATION BAR (Active: Контакты) -->
+  <nav class="bottom-nav">
+    <a href="index.html" class="bottom-nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
+      <span>Главная</span>
+    </a>
+    <a href="courses.html" class="bottom-nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+      </svg>
+      <span>Курсы</span>
+    </a>
+    <a href="internship.html" class="bottom-nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+      </svg>
+      <span>Стажировка</span>
+    </a>
+    <a href="contacts.html" class="bottom-nav-item active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+      <span>Контакты</span>
+    </a>
+  </nav>
+
+  <!-- Application Logic JavaScript -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
